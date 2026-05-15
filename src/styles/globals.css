@@ -92,16 +92,34 @@
   --color-foreground: #1F1F1F;  /* light mode */
   --color-bg-card: #ffffff;  /* light mode */
   --color-border-card: #ffffff;  /* light mode */
+}
 
-    --font-primary: "Work Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
-               "Segoe UI Emoji", sans-serif;
-
-  /* Secondary font (e.g., for headings) */
-  --font-secondary: "Poppins", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+/* Fonts: `inline` keeps `var(--font-poppins)` / `var(--font-montserrat)` references intact at runtime so next/font CSS variables resolve through the cascade. */
+@theme inline {
+  --font-primary: var(--font-poppins), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+                  Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+                  "Segoe UI Emoji", sans-serif;
+  --font-secondary: var(--font-montserrat), ui-sans-serif, system-ui, -apple-system, "Segoe UI",
                     Roboto, "Helvetica Neue", Arial, "Noto Sans",
                     "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+}
 
+/* GoodDeal landing palette */
+@theme {
+  --color-gd-primary:        #2048e6;
+  --color-gd-primary-light:  #4d76f5;
+  --color-gd-primary-lighter:#7ea0f8;
+  --color-gd-primary-dark:   #0f30b5;
+  --color-gd-primary-tint:   #e8eefb;
+  --color-gd-deep:           #0a1a5c;
+  --color-gd-footer:         #0a1236;
+  --color-gd-neutral-50:     #f7f8fc;
+  --color-gd-neutral-100:    #eef0f7;
+  --color-gd-neutral-200:    #dde2ef;
+  --color-gd-neutral-400:    #9aa3be;
+  --color-gd-neutral-600:    #5a6280;
+  --color-gd-neutral-800:    #252d4a;
+  --color-gd-neutral-900:    #111827;
 }
 
 /* Class override so a `.dark` class wins regardless of system */

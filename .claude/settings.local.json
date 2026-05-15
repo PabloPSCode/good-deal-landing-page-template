@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:claude.ai)",
+      "Bash(grep -qE \"Ready in|✓ Ready|error|Error:|Failed to compile\" \"C:\\\\\\\\Users\\\\\\\\Pablo Silva\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\c--Users-Pablo-Silva-Desktop-coding-business-landing-pages-and-websites-good-deal-landing-page-template\\\\\\\\7ce01a94-dba0-476d-8c59-3184743e7139\\\\\\\\tasks\\\\\\\\b9xondn8h.output\")",
+      "Read(//tmp/**)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/)",
+      "Bash(npx tsc *)",
+      "Bash(curl -s http://localhost:3000/)"
+    ]
+  }
+}
